@@ -1,0 +1,16 @@
+
+1. iOS Permissions
+   With iOS 10 if you are using some features like Camera, Calendar, you need to add string value explaining to the user how the app uses this data to info.plist. Some of the key are listed bellow.
+	1. NSCalendarsUsageDescription
+	2. NSMicrophoneUsageDescription
+	3. NSCameraUsageDescription 
+	4. NSPhotoLibraryUsageDescription
+
+2. Google Login Support
+   If you are using google SDK, you need to enable keychain access in capabilities of Xcode
+
+3. APNS Support
+   If you are using push notification enable it in capabilities of Xcode.
+
+4. HealthKit
+Go to Info.plist file -> Add row with key "NSHealthShareUsageDescription", add a description that conveys the reason for Health App access
